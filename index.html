@@ -6,57 +6,71 @@
     <title>DeepThinker - Personal Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'DM Sans', sans-serif;
             background-color: #000;
             color: #fff;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #000;
+            background-color: #fff; /* Pure shiny white */
+            color: #000; /* Text color: Pure white */
             padding: 20px;
             text-align: center;
+            cursor: pointer;
         }
         h1 {
-            color: #00f;
+            color: #000; /* Text color: Pure white */
+            font-family: 'DM Serif', serif; /* Font style for headings: DM Serif */
         }
         nav {
             text-align: center;
             margin-top: 20px;
+            position: fixed;
+            top: 0;
+            right: 20px; /* Navigation menu on the top right corner */
         }
         nav a {
-            color: #fff;
+            color: #00f; /* Dynamic blue color for links */
             text-decoration: none;
             margin: 0 10px;
         }
         nav a:hover {
-            color: #00f;
+            text-decoration: underline;
         }
         section {
             padding: 20px;
-            margin-top: 20px;
-            color: #fff; /* Added to make text visible on dark background */
+            margin-top: 100px; /* Added top margin to account for fixed navigation menu */
         }
         footer {
             background-color: #000;
+            color: #fff;
             padding: 20px;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
-            color: #fff; /* Added to make text visible on dark background */
+        }
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #00f; /* Dynamic blue color for scroll indicator */
         }
     </style>
 </head>
 <body>
-    <header>
+    <header onclick="window.location.reload();">
         <h1>DeepThinker</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-        </nav>
     </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="scroll-indicator"></div>
     
     <section id="about">
         <h2>About Me</h2>
@@ -66,7 +80,7 @@
     <section id="blog">
         <h2>Blogs</h2>
         <article>
-            <h3>Resolve Issue Within!</h3> <!-- Updated blog post title -->
+            <h3>Resolve Issue Within!</h3>
             <p>Resolving issues within ourselves is a crucial aspect of personal growth and development. In this blog post, we'll explore the psychological perspective on resolving internal conflicts and finding inner peace.</p>
             <p>Feel free to customize this section with your own blog posts.</p>
         </article>
@@ -76,7 +90,7 @@
         <h2>Contact</h2>
         <p>If you have any questions or would like to connect, feel free to reach out to me:</p>
         <ul>
-            <li>Email: <a href="mailto:ak7342922b@gmail.com">ak7342922b@gmail.com</a></li> <!-- Updated contact email -->
+            <li>Email: <a href="mailto:ak7342922b@gmail.com">ak7342922b@gmail.com</a></li>
         </ul>
     </section>
 
